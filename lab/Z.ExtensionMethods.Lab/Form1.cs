@@ -1,9 +1,9 @@
-﻿// Copyright (c) 2015 ZZZ Projects. All rights reserved
-// Licensed under MIT License (MIT) (https://github.com/zzzprojects/Z.ExtensionMethods)
-// Website: http://www.zzzprojects.com/
-// Feedback / Feature Requests / Issues : http://zzzprojects.uservoice.com/forums/283927
-// All ZZZ Projects products: Entity Framework Extensions / Bulk Operations / Extension Methods /Icon Library
-
+﻿// Description: C# Extension Methods Library to enhances the .NET Framework by adding hundreds of new methods. It drastically increases developers productivity and code readability. Support C# and VB.NET
+// Website & Documentation: https://github.com/zzzprojects/Z.ExtensionMethods
+// Forum: https://github.com/zzzprojects/Z.ExtensionMethods/issues
+// License: https://github.com/zzzprojects/Z.ExtensionMethods/blob/master/LICENSE
+// More projects: http://www.zzzprojects.com/
+// Copyright © ZZZ Projects Inc. 2014 - 2016. All rights reserved.
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -157,25 +157,18 @@ namespace Z.ExtensionMethods.Lab
         public Form1()
         {
             InitializeComponent();
+            object x1 = null;
 
-            var aaaa = (Attribute)null;
-    
-            StringBuilder sb = new StringBuilder("0123456789");
-            var b4 = "abc".Substring(1, 4);
-            char ch = '\'';
-            char ch2 = '"';
-            string tag = "a<b class='to>to'>c</b>d";
-            string tag2 = tag.StripHtml();
-            var a = new[] {"a", "b", "c"};
-            var b = new[] {"c", "d"};
+            var r1 = x1.ToInt32OrDefault(4);
+            var r2 = x1.ToInt32OrDefault(4, true);
 
-            using (var command = new SqlCommand())
-            {
-               // command.ExecuteDataSet();
-            }
+            //using (var command = new SqlCommand())
+            //{
+            //   // command.ExecuteDataSet();
+            //}
 
-            var c = new List<String[]> {a, b};
-            IEnumerable<string> d = c.MergeInnerEnumerable();
+            //var c = new List<String[]> {a, b};
+            //IEnumerable<string> d = c.MergeInnerEnumerable();
         }
 
         public void Misc()
